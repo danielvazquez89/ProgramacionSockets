@@ -64,7 +64,6 @@ public class EcoCliente {
 				linea = sc.nextLine();
 			} while (linea.trim().equals(""));
 			canal.enviarMsg(nombre + ": " + linea, "localhost", 5555);
-			System.out.println(linea.trim());
 			if (!linea.trim().equals("Fin")) {
 				linea = canal.recibirMsg();
 				System.out.println(linea);

@@ -64,6 +64,7 @@ public class EcoServidor {
 		String linea;
 		do {
 			linea = canal.recibirMsg();
+			System.out.println(linea);
 			if (linea.split(":")[1].trim().equals("Fin")) {
 				linea = "Fin";
 			} else {
